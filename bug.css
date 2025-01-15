@@ -1,0 +1,12 @@
+The following CSS code snippet exhibits unexpected behavior in certain browsers. It intends to style a list item with a background color that changes on hover, but the transition effect does not work correctly. The background color changes abruptly instead of smoothly transitioning. 
+
+```css
+li {
+  background-color: lightblue;
+  transition: background-color 0.5s ease;
+}
+
+li:hover {
+  background-color: lightgreen;
+}
+```
