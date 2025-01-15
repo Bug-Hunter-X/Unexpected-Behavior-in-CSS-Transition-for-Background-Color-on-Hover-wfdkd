@@ -1,0 +1,14 @@
+The solution is to explicitly set the background color for the `li` element. The transition property then works correctly, ensuring a smooth transition between the background colors.
+
+```css
+li {
+  background-color: lightblue;
+  transition: background-color 0.5s ease;
+}
+
+li:hover {
+  background-color: lightgreen;
+}
+```
+
+This ensures that the browser has a defined initial state for the transition to work from.  Without this, the browser may not correctly register the transition.
